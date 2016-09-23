@@ -1,0 +1,26 @@
+{
+  "name": "dreamlines-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/babel/bin/babel.js src --source-maps --out-dir dist",
+    "clean": "sudo rm -rf node_modules",
+    "start": "node_modules/nodemon/bin/nodemon.js -- node_modules/babel/bin/babel-node.js src/server.js"
+  },
+  "author": "zain",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "express": "4.13.3",
+    "mongoose": "^4.6.1",
+    "mongoose-find-one-or-create": "^0.2.0",
+    "neat-csv": "^2.1.0",
+    "node-cron": "^1.1.2"
+  },
+  "devDependencies": {
+    "babel": "5.8.29",
+    "nodemon": "1.8.0"
+  }
+}
